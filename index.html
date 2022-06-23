@@ -40,7 +40,6 @@
 <li><a href="#bulk-transfers">Bulk Transfers</a></li>
 <li><a href="#using-erc-20-tokens-instead-of-ether">Using ERC-20 Tokens Instead of Ether</a></li>
 <li><a href="#private-auctions">Private Auctions</a></li>
-<li><a href="#sharing-sale-fees-with-opensea">Sharing Sale Fees with OpenSea</a></li>
 <li><a href="#listening-to-events">Listening to Events</a></li>
 </ul>
 </li>
@@ -256,13 +255,6 @@
 <p>Here&#39;s an example of listing a Decentraland parcel for 10 ETH with a specific buyer address allowed to take it. No more needing to worry about whether they&#39;ll give you enough back!</p>
 <pre><code class="language-JavaScript"><span class="hl-1">// Address allowed to buy from you</span><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-6">buyerAddress</span><span class="hl-0"> = </span><span class="hl-5">&quot;0x123...&quot;</span><br/><br/><span class="hl-3">const</span><span class="hl-0"> </span><span class="hl-6">listing</span><span class="hl-0"> = </span><span class="hl-2">await</span><span class="hl-0"> </span><span class="hl-4">openseaSDK</span><span class="hl-0">.</span><span class="hl-7">createSellOrder</span><span class="hl-0">({</span><br/><span class="hl-0">  </span><span class="hl-4">tokenAddress:</span><span class="hl-0"> </span><span class="hl-5">&quot;0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d&quot;</span><span class="hl-0">, </span><span class="hl-1">// Decentraland</span><br/><span class="hl-0">  </span><span class="hl-4">tokenId:</span><span class="hl-0"> </span><span class="hl-5">&quot;115792089237316195423570985008687907832853042650384256231655107562007036952461&quot;</span><span class="hl-0">, </span><span class="hl-1">// Token ID</span><br/><span class="hl-0">  </span><span class="hl-4">accountAddress:</span><span class="hl-0"> </span><span class="hl-6">OWNERS_WALLET_ADDRESS</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-4">startAmount:</span><span class="hl-0"> </span><span class="hl-9">10</span><span class="hl-0">,</span><br/><span class="hl-0">  </span><span class="hl-4">buyerAddress</span><br/><span class="hl-0">})</span>
 </code></pre>
-
-<a href="#sharing-sale-fees-with-opensea" id="sharing-sale-fees-with-opensea" style="color: inherit; text-decoration: none;">
-  <h3>Sharing Sale Fees with OpenSea</h3>
-</a>
-<p>We share fees for successful sales with game developers, relayers, and affiliates using the OpenSea orderbook. Developers can customize the fee amount to apply to buyers and/or sellers.</p>
-<p>See <a href="#affiliate-program">Affiliate Program</a> above for how to register referrers for sales.</p>
-<p>More information will appear here when our redesigned affiliate program is ready. In the meantime, contact us at <a href="mailto:contact@opensea.io">contact@opensea.io</a> (or in <a href="https://discord.gg/ga8EJbv">Discord</a>), or use our legacy affiliate program at <a href="https://opensea.io/account#referrals">https://opensea.io/account#referrals</a>.</p>
 
 <a href="#listening-to-events" id="listening-to-events" style="color: inherit; text-decoration: none;">
   <h3>Listening to Events</h3>
